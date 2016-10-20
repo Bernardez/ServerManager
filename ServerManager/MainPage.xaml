@@ -8,7 +8,21 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="button" Content="Start Game PC" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="button_Click"/>
-        <Button x:Name="button1" Content="Stop Game PC" HorizontalAlignment="Left" Margin="130,10,0,0" VerticalAlignment="Top" Click="button1_Click"/>
+        <TextBlock x:Name="textBlockControl" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Machine Control" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="button" Content="Start Virtual PC" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="button1" Content="Stop Virtual PC" HorizontalAlignment="Left" Margin="135,39,0,0" VerticalAlignment="Top" Click="button1_Click"/>
+        <TextBlock x:Name="textBlockMonitoring" HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" Text="Machine Monitoring" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="textBlockMonitoringCPU" HorizontalAlignment="Left" Margin="12,155,0,0" TextWrapping="Wrap" Text="CPU Load" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockMonitoringMemory" HorizontalAlignment="Left" Margin="12,180,0,0" TextWrapping="Wrap" Text="Memory Usage" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockMonitoringStage" HorizontalAlignment="Left" Margin="12,130,0,0" TextWrapping="Wrap" Text="State" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockMonitoringStagePlaceholder" HorizontalAlignment="Left" Margin="193,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159"/>
+        <TextBlock x:Name="textBlockMonitoringCPUPlaceholder" HorizontalAlignment="Left" Margin="193,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159"/>
+        <TextBlock x:Name="textBlockMonitoringMemoryPlaceholder" HorizontalAlignment="Left" Margin="193,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159"/>
+        <TextBlock x:Name="textBlockMonitoringHDDTemps" HorizontalAlignment="Left" Margin="12,205,0,0" TextWrapping="Wrap" Text="HDD Temperatures" VerticalAlignment="Top" Width="160"/>
+        <TextBlock x:Name="textBlockMonitoringHDDTempsPlaceholder" HorizontalAlignment="Left" Margin="12,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Height="370"/>
+        <TextBlock x:Name="textBlockMonitoringVCPUCount" HorizontalAlignment="Left" Margin="12,105,0,0" TextWrapping="Wrap" Text="vCPU Count" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockMonitoringVCPUCountPlaceholder" HorizontalAlignment="Left" Margin="191,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159"/>
+        <TextBlock x:Name="textBlockMonitoringCPUTemps" HorizontalAlignment="Left" Margin="190,205,0,0" TextWrapping="Wrap" Text="CPU Temperatures" VerticalAlignment="Top" Width="160"/>
+        <TextBlock x:Name="textBlockMonitoringCPUTempsPlaceholder" HorizontalAlignment="Left" Margin="190,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Height="370"/>
     </Grid>
 </Page>
